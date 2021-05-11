@@ -5,7 +5,9 @@
 
 
 ## Introduction:
-Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup>  with an estimated cost to treat each individual in the range of 16,000-100,000 USD<sup>13</sup> .  Even a conservative estimate places the cost in the range of 4.5 billion dollars annually.  The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
+Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup>  with an estimated cost to treat each individual in the range of 16,000-100,000 USD<sup>13</sup> .  Even a conservative estimate places the cost in the range of 4.5 billion dollars annually.  
+
+The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
 
 The goal of this study is to create a machine learing model that can identify patients with poor outcomes (death from cancer) from gene expression profiles (GEP).  Additionally, gain insights into genes that influence those predictions.
 

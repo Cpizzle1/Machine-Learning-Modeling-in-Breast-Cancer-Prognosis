@@ -5,7 +5,7 @@
 
 
 ## Introduction:
-Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup> . Its has been estimated to treat each individual could cost in the range of 16,000-100,000 USD<sup>13</sup>.  The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
+Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup>  with an estimated cost to treat each individual in the range of 16,000-100,000 USD<sup>13</sup> .  Even a conservative estimate places the cost in the range of 4.5 billion dollars annually.  The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
 
 The goal of this study is to create a machine learing model that can identify patients with poor outcomes (death from cancer) from gene expression profiles (GEP).  Additionally, gain insights into genes that influence those predictions.
 
@@ -89,7 +89,7 @@ Best Score for LogisticRegression: 0.6678
 
 ![feature importance gradient boots lst](images/gradient_boost_feature_importance.png)
 
-Based on our modeling, this gene is a candidate to maximize the benefit from those individuals with poor prognosis and outlooks.
+Based on our modeling, this gene is also a potential candidate to maximize the benefit from those individuals with poor prognosis and outlooks.
 
 Synnove et al. published in Oncology Reports an article in 2010 suggesting that AURKA could be a suitbile candidate for target therapies with tradional lab(in-situ hybridization) techniques.  [pub med article](https://pubmed.ncbi.nlm.nih.gov/20043089/#:~:text=AURKA%20gene%20amplification%20is%20a,therapies%20with%20Aurora%2DA%20inhibitors.)  
 
@@ -141,7 +141,7 @@ As expected, more data would help increase the prediction of the mRNA model, but
 
 12 [medium_banner](https://medium.com/berkeleyischool/breast-cancer-genetic-testing-and-privacy-476b799e5f86)
 
-13 [cnbc]https://www.cnbc.com/2020/10/22/how-much-breast-cancer-treatment-costs-even-with-health-insurance-.html#:~:text=More%20than%20275%2C000%20women%20in,anywhere%20between%20%2420%2C000%20and%20%24100%2C000.
+13 [cnbc](https://www.cnbc.com/2020/10/22/how-much-breast-cancer-treatment-costs-even-with-health-insurance-.html#:~:text=More%20than%20275%2C000%20women%20in,anywhere%20between%20%2420%2C000%20and%20%24100%2C000)
 
 
 

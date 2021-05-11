@@ -66,7 +66,7 @@ Best Score for LogisticRegression: 0.6678
 ## Gene Coefficients in Lasso regularized Model
 
 
-![Gene Weights](images/Gene_Betas.png)
+![Gene Weights](images/capstone3_coefficients.png)
 
 [STAT5](https://pubmed.ncbi.nlm.nih.gov/23161573/) gene could potentially be invovled in a protective pathway according to pubmed [article](https://pubmed.ncbi.nlm.nih.gov/23161573/) would correlate with findings in this study.
 

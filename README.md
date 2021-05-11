@@ -26,7 +26,7 @@ The [cBioPortal hosted by the Center of Molecular Oncology at Sloan Kettering Ca
 The Molecular Taxonomy of Breast Cancer International Consortium (METABRIC) is an organization hosting a database  with clinical and genetic data from 1,904 patients and primary breast cancer samples.   A list of 489 genes are listed as feature columns and Z-scores of mRNA expression levels are listed as values from RNA-seq collection. In this study, we will be focusing on the mRNA expression levels which is exclusively numerical. The catagory of patient outcomes (living, death from other causes, and death from cancer) was recatagorized as 1:deceased due to cancer, 0:all other cases.
 
 
-![EDA dataframe](images/EDA_df.png)
+![EDA dataframe](images/EDA_cap3.png)
 
 Clinical information such as treatment and age at diagnosis are also features. 
 

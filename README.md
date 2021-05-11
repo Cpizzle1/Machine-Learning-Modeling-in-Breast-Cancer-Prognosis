@@ -5,7 +5,7 @@
 
 
 ## Introduction:
-Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup> .  The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
+Breast Cancer is the most common cancer maligancy in women around the world and is curable in 70-80% of patients with early detection<sup>1</sup>.  In the U.S. alone, 12% of women will be diagnosed with breast cancer in their lifetime<sup>2</sup> . Its has been estimated to treat each individual could cost in the range of 16,000-100,000 USD<sup>13</sup>.  The development of gene microarray technologies has allowed the detection of gene expression amoung thousands of genes simultanously.  Technological insights could help patient outcomes as well as save costs in poor diagnosis and ineffective treatments. This technology, in concert with the migration to electronic health records can now be utilitzed to help understand the underlying pathways of various disease states and enhance patient outcomes.
 
 The goal of this study is to create a machine learing model that can identify patients with poor outcomes (death from cancer) from gene expression profiles (GEP).  Additionally, gain insights into genes that influence those predictions.
 
@@ -140,6 +140,8 @@ As expected, more data would help increase the prediction of the mRNA model, but
 11 [machine-mastert](https://machinelearningmastery.com)
 
 12 [medium_banner](https://medium.com/berkeleyischool/breast-cancer-genetic-testing-and-privacy-476b799e5f86)
+
+13 [cnbc]https://www.cnbc.com/2020/10/22/how-much-breast-cancer-treatment-costs-even-with-health-insurance-.html#:~:text=More%20than%20275%2C000%20women%20in,anywhere%20between%20%2420%2C000%20and%20%24100%2C000.
 
 
 

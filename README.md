@@ -98,10 +98,24 @@ Synnove et al. published in Oncology Reports an article in 2010 suggesting that 
 
 ![feature importance aruka gene](images/Aruka_gene.png)
 
+
+## Clinical Treatment Data Analysis
+![KDE survival plot](images/KDE_mastectomy.png)
+T-test for unpaired samples
+pvalue=2.3994948261799636e-05
+
+* Reject null hypothesis and conclude that populations of mastectomy and breast conserving treatment are different.
+
+* Likely cause of Mastectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy)
+
+![lifelines plot mastectomy](images/surivival_mastectomy.png)
+
+* code avaiable in analyze_survival.py to run t-test and surival curves on all clinical data. 
+
+
 ## Future Directions :
 
 * Unsupervised gene clustering
-* Incorporate clinical data
 * Research Genes of interest
 
 

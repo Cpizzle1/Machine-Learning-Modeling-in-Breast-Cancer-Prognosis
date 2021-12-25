@@ -11,16 +11,16 @@ import seaborn as sns
 
 
 class survival_analyze():
-     def __init__(self, data):
+    def __init__(self, data):
         self.data = data
 
 
-    """[Initialize an instance of survival_analyze class that will be used to plot and analyze various 
-    data and plot results 
-    args:
-        data: cleaned dataframe of  METABRIC clinical data
-    ]
-    """
+        """[Initialize an instance of survival_analyze class that will be used to plot and analyze various 
+        data and plot results 
+        args:
+            data: cleaned dataframe of  METABRIC clinical data
+        ]
+        """
    
     def plot_survival(self, column, value):
         """[plot KDE survival plots of cleaned METABRIC clinical data]
@@ -44,7 +44,7 @@ class survival_analyze():
         plt.show()
 
     def plot_kaplan_meier(self, column, value):
-             """[plot Kaplan meier survival plots of cleaned METABRIC clinical data]
+        """[plot Kaplan meier survival plots of cleaned METABRIC clinical data]
 
         Args:
             column ([string]): [column in METABRIC data corresponding to a patient attribute, such as her2 receptor
@@ -91,6 +91,29 @@ class survival_analyze():
         print(f'{round(avg_age, 2)} years old')
 
         return treatment_df['age_at_diagnosis'].mean()
+    
+    def t_test(self, column, value):
+        """[Runs an upaired t-test on column with value vs column with not value and returns a tstatics and p value]
+
+        Args:
+            column ([string]):[column of desired patient attribute ie her2 receptor status]
+            value ([string or integer]): [value of column to be tested vs all other values in column in t-test]
+
+        Returns:
+            [scipy.stats.Ttest_indResult object]: [tstatics and pvalue of t-test performed]
+        """
+        self.data.dropna(subset=[column], inplace=True)
+        # print(self.data[column].shape)
+        treatment_df = self.data[self.data[column]==value]
+        not_treatment_df = self.data[self.data[column]!=value]
+        treatment_months = treatment_df.overall_survival_months
+        not_treatment_months = not_treatment_df.overall_survival_months
+        results = stats.ttest_ind(a= treatment_months,
+                b= not_treatment_months,
+                equal_var=False)
+        print(results)
+        return results
+
 
 
 
@@ -106,6 +129,7 @@ if __name__ == "__main__":
     mrna_df['death_from_cancer'] = df.death_from_cancer
     df.death_from_cancer.fillna(0, inplace = True)
     mrna_df.death_from_cancer.fillna(0, inplace = True)
+    # print(df['type_of_breast_surgery'].isna().sum())
 
     # breast_conserving_df['death_from_cancer'].fillna(0, inplace = True)
 
@@ -118,8 +142,12 @@ if __name__ == "__main__":
     # test.plot_kaplan_meier('type_of_breast_surgery', 'BREAST CONSERVING')
     # test.plot_kaplan_meier('chemotherapy', 1)
     # test.plot_kaplan_meier('her2_status', 'Negative')
-    test.plot_kaplan_meier('type_of_breast_surgery', 'MASTECTOMY')
+    # test.plot_kaplan_meier('type_of_breast_surgery', 'MASTECTOMY')
+    
     # test.diagnosis_age('type_of_breast_surgery', 'BREAST CONSERVING')
+    
+    test.t_test('type_of_breast_surgery', 'MASTECTOMY')
+    # test.t_test('type_of_breast_surgery', 'BREAST CONSERVING')
 
 
 

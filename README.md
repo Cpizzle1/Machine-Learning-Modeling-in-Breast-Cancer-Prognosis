@@ -101,6 +101,9 @@ Synnove et al. published in Oncology Reports an article in 2010 suggesting that 
 
 ## Clinical Treatment Data Analysis
 ![KDE survival plot](images/KDE_mastectomy.png)
+
+
+
 T-test for unpaired samples
 pvalue=2.3994948261799636e-05
 

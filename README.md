@@ -108,7 +108,7 @@ pvalue=2.3994948261799636e-05
 
 * Likely cause of Mastectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy)
 
-<h1 align="center">Life lines survival curves of patients undergoing mastectomy or breast conserving treatment</h1>
+<h2 align="center">Life lines survival curves of patients undergoing mastectomy or breast conserving treatment</h2>
 
 ![lifelines plot mastectomy](images/surivival_mastectomy.png)
 

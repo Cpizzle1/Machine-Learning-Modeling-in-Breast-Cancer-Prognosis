@@ -8,12 +8,12 @@ import pandas as pd
 import numpy as np
 
 def render_page(url):
-        driver = webdriver.Chrome('/Users/cp/Downloads/chromedriver')
-        driver.get(url)
-        time.sleep(3)
-        r = driver.page_source
-        driver.quit()
-        return r
+    driver = webdriver.Chrome('/Users/cp/Downloads/chromedriver')
+    driver.get(url)
+    time.sleep(3)
+    r = driver.page_source
+    driver.quit()
+    return r
 
 def scraper2(page, dates):
     output = pd.DataFrame()
@@ -126,6 +126,7 @@ def make_year_dates(yr= 2020):
     return yr_total
 
 if __name__=='__main__':
-    pass
-
-
+    
+    # print(make_year_dates())
+    x = scraper2('https://www.wunderground.com/history/daily/us/tx/garland/KDAL',['2021-1-1', '2021-1-2'])
+    print(x)

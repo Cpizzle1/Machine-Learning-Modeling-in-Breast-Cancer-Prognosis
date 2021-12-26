@@ -118,6 +118,20 @@ pvalue=2.3994948261799636e-05
 * code avaiable in analyze_survival.py to run t-test and surival curves on all clinical data. 
 
 
+![alt-text-2](images/KDE_chemotherapy.png ) 
+
+<h2 align="center">Life lines survival curves of patients undergoing chemotherapy or non-chemotherapy treatment</h2>
+
+![alt-text-1](images/surivival_chemotherapy.png "title-1") 
+
+T-test for unpaired samples
+pvalue=1.393376395037141e-12
+
+* Reject null hypothesis and conclude that populations of chemotherapy and non-chemotherapy patients are different.
+
+* Likely cause of Chemotherapy and & Masectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy/chemo)
+
+
 ## Future Directions :
 
 * Unsupervised gene clustering

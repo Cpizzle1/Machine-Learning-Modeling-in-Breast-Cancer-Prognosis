@@ -111,7 +111,7 @@ pvalue=2.3994948261799636e-05
 
 * 62.47 years old (average age) stanard deviation: 13.371033064299088
 * 1.88 (average tumor stage) stanard deviation: 0.6209425334364334
-### AGE BREAST CONSERVING COHORT: 
+### BREAST CONSERVING COHORT: 
 
 * 59.18 years old (average age)  stanard deviation: 12.092589450679066
 * 1.56 (average tumor stage) stanard deviation: 0.5813346601147508

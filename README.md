@@ -104,8 +104,17 @@ Synnove et al. published in Oncology Reports an article in 2010 suggesting that 
 
 
 
-T-test for unpaired samples
+T-test for unpaired samples masectomy vs breast conserving overall survival months after diagnosis:
 pvalue=2.3994948261799636e-05
+
+### MASECTOMY COHORT: 
+
+* 62.47 years old (average age) stanard deviation: 13.371033064299088
+* 1.88 (average tumor stage) stanard deviation: 0.6209425334364334
+### AGE BREAST CONSERVING COHORT: 
+
+* 59.18 years old (average age)  stanard deviation: 12.092589450679066
+* 1.56 (average tumor stage) stanard deviation: 0.5813346601147508
 
 * Reject null hypothesis and conclude that populations of mastectomy and breast conserving treatment are different.
 
@@ -124,8 +133,18 @@ pvalue=2.3994948261799636e-05
 
 ![alt-text-1](images/surivival_chemotherapy.png "title-1") 
 
-T-test for unpaired samples
+T-test for unpaired samples of CHEMOTHERAPY VS NON-CHEMOTHERAPY overall survival months after diagnosis
 pvalue=1.393376395037141e-12
+
+### CHEMOTHERAPY COHORT: 
+* 50.54 years old(average age) stanard deviation: 10.981331900114531
+* 2.15 (average tumor stage) stanard deviation: 0.5185930391871407
+
+### NON-CHEMOTHERAPY COHORT:
+
+* 63.86 years old(average age) stanard deviation: 12.007054546137807
+* 1.64 (average tumor stage) stanard deviation: 0.6109440261937826
+
 
 * Reject null hypothesis and conclude that populations of chemotherapy and non-chemotherapy patients are different.
 

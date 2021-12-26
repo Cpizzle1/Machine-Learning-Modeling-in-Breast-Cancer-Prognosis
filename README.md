@@ -150,6 +150,12 @@ pvalue=1.393376395037141e-12
 
 * Likely cause of Chemotherapy and & Masectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy/chemo)
 
+## Other notable insights:
+* tp53 & pik3ca mutations occur approximately 20% more than nearest other mutations in patients that passed away due to cancer.
+* p53 mutations are dispersed across coding region (most common R175H: 10 occurances out of 280)
+* pik3ca mutations are much more focused(most common H1047R: 93 occurances out of 264, E545K:41 occurances out of 264)
+    - likely a CGU to CAU  codon mutation in H1047R
+
 
 ## Future Directions :
 

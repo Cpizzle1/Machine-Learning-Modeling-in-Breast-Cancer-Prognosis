@@ -120,10 +120,10 @@ class survival_analyze():
 
         Args:
             column ([string]): [column of desired patient attribute ie her2 receptor status]
-            value ([string or integer]): [value of column of average age desired]
+            value ([string or integer]): [value of column of tumor stage desired]
 
         Returns:
-            [float]: [average age of patients with column at the value attribute 
+            [float]: [tumor stage of patients with column at the value attribute 
             * returned value is not rounded printed value is rounded to 2 decimal places.]
         """
         treatment_df = self.data[self.data[column]==value]

@@ -116,7 +116,7 @@ pvalue=2.3994948261799636e-05
 * 59.18 years old (average age)  stanard deviation: 12.092589450679066
 * 1.56 (average tumor stage) stanard deviation: 0.5813346601147508
 
-* Reject null hypothesis and conclude that populations of mastectomy and breast conserving treatment are different.
+* Reject null hypothesis and conclude that populations of mastectomy and breast conserving treatment are different(pvalue=2.3994948261799636e-05).
 
 * Likely cause of Mastectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy)
 
@@ -146,7 +146,7 @@ pvalue=1.393376395037141e-12
 * 1.64 (average tumor stage) stanard deviation: 0.6109440261937826
 
 
-* Reject null hypothesis and conclude that populations of chemotherapy and non-chemotherapy patients are different.
+* Reject null hypothesis and conclude that populations of chemotherapy and non-chemotherapy patients are different (pvalue=1.393376395037141e-12).
 
 * Likely cause of Chemotherapy and & Masectomy having lower survival curve is more aggressive/danger cancers will have individuals take a more proactive role in prevention. (ie mastectomy/chemo)
 

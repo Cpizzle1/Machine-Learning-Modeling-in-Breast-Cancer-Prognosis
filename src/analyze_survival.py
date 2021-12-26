@@ -88,7 +88,8 @@ class survival_analyze():
         not_treatment_months = not_treatment_df.overall_survival_months
         # print(f'{treatment_df['age_at_diagnosis'].mean()}')
         avg_age = treatment_df['age_at_diagnosis'].mean()
-        print(f'{round(avg_age, 2)} years old')
+        stardard_dev_age = treatment_df['age_at_diagnosis'].std()
+        print(f'{round(avg_age, 2)} years old stanard deviation {stardard_dev_age}')
 
         return treatment_df['age_at_diagnosis'].mean()
     
@@ -114,7 +115,27 @@ class survival_analyze():
         print(results)
         return results
 
+    def tumor_stage(self, column, value):
+        """[gets average tumor stage of patients rounded to 2 decimal places with column attribute and value]
 
+        Args:
+            column ([string]): [column of desired patient attribute ie her2 receptor status]
+            value ([string or integer]): [value of column of average age desired]
+
+        Returns:
+            [float]: [average age of patients with column at the value attribute 
+            * returned value is not rounded printed value is rounded to 2 decimal places.]
+        """
+        treatment_df = self.data[self.data[column]==value]
+        not_treatment_df = self.data[self.data[column]!=value]
+        treatment_months = treatment_df.overall_survival_months
+        not_treatment_months = not_treatment_df.overall_survival_months
+        # print(f'{treatment_df['age_at_diagnosis'].mean()}')
+        avg_tumorstage = treatment_df['tumor_stage'].mean()
+        stardard_dev_tumor_stage = treatment_df['tumor_stage'].std()
+        print(f'Average tumor stage: {round(avg_tumorstage, 2)} \n stanard deviation: {stardard_dev_tumor_stage}')
+
+        return treatment_df['age_at_diagnosis'].mean()
 
 
 if __name__ == "__main__":
@@ -146,9 +167,17 @@ if __name__ == "__main__":
     
     # test.diagnosis_age('type_of_breast_surgery', 'BREAST CONSERVING')
     
-    test.t_test('type_of_breast_surgery', 'MASTECTOMY')
+    # test.t_test('type_of_breast_surgery', 'MASTECTOMY')
+    
     # test.t_test('type_of_breast_surgery', 'BREAST CONSERVING')
 
+    # test.diagnosis_age('type_of_breast_surgery', 'MASTECTOMY')
+    # test.diagnosis_age('type_of_breast_surgery', 'BREAST CONSERVING')
+    # test.tumor_stage('type_of_breast_surgery', 'MASTECTOMY')
+    # test.tumor_stage('type_of_breast_surgery', 'BREAST CONSERVING')
+
+    test.tumor_stage('chemotherapy', 0)
+    # test.diagnosis_age('chemotherapy', 0)
 
 
 
